@@ -1,0 +1,20 @@
+.color-button-bar {
+    display: flex;
+    place-content: center;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.color-button-bar__button {
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: scale 300ms;
+
+    &.color-button-bar__button:hover {
+        background-color: black;
+        color: white;
+        scale: 1.2;
+    }
+}

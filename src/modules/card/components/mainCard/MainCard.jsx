@@ -1,7 +1,7 @@
-import "./MainCard.css";
+import "./MainCard.scss";
 
-const MainCard = () => {
-  return <div className="main-card">Card content here</div>
+const MainCard = ({ children }) => {
+  return <div className="main-card">{children}</div>;
 };
 
 export default MainCard;

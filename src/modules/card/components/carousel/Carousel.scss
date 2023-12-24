@@ -1,0 +1,60 @@
+.carousel {
+  position: relative;
+}
+
+.carousel__img-container {
+  height: 250px;
+}
+
+.carousel__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel__nav-container {
+  padding: 6px 0 10px;
+  display: flex;
+  place-content: center;
+  gap: 10px;
+  border-bottom: 2px solid gainsboro;
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gainsboro;
+
+  &--active {
+    background-color: black;
+  }
+}
+
+.carousel__cart-container {
+  height: 76px;
+  width: 76px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.carousel__cart-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel__bubble {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #ffca65;
+  font-weight: 500;
+}

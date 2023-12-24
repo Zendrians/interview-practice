@@ -1,0 +1,16 @@
+.description {
+    padding: 10px;
+}
+
+.description__product-name {
+  font-weight: bold;
+}
+
+.description__price {
+  padding-top: 5px;
+
+  & strong {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+}
