@@ -1,7 +1,11 @@
 import "./MainCard.scss";
 
 const MainCard = ({ children }) => {
-  return <div className="main-card">{children}</div>;
+  return (
+    <div id="main-card" className="main-card">
+      {children}
+    </div>
+  );
 };
 
 export default MainCard;
