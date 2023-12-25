@@ -8,6 +8,7 @@ import AddToCartBtn from "../components/addToCartBtn/AddToCartBtn";
 import { useEffect, useState } from "react";
 import { getProviders } from "../client/getProviders";
 import NotificationDialog from "../components/notificationDialog/NotificationDialog";
+import Cart from "../components/cart/Cart";
 
 const CardModuleContainer = () => {
   const [providers, setProviders] = useState([]);
@@ -25,15 +26,20 @@ const CardModuleContainer = () => {
     fetchAndFilterProviders();
   }, []);
 
+  const addProductCount = () => {
+    setProductCount(productCount + 1);
+  };
+
   return (
     <>
       <MainCardLayout>
         <MainCard>
           <Carousel />
+          <Cart productCount={productCount} />
           <ColorButtonBar />
           <Description />
           <ProviderSelection providers={providers} />
-          <AddToCartBtn />
+          <AddToCartBtn addProductCount={addProductCount} />
         </MainCard>
       </MainCardLayout>
       <NotificationDialog isOpen={false} />

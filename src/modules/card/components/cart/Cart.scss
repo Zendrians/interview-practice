@@ -1,0 +1,27 @@
+.cart {
+  height: 76px;
+  width: 76px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__bubble {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ffca65;
+    font-weight: 500;
+  }
+}

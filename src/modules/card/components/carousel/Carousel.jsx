@@ -2,7 +2,6 @@ import { useContext } from "react";
 import blackCap from "../../../../assets/black.png";
 import blueCap from "../../../../assets/blue.png";
 import redCap from "../../../../assets/red.png";
-import cartIcon from "../../../../assets/cart.png";
 
 import "./Carousel.scss";
 import { CapColorContext } from "../../context/capColorContext";
@@ -47,13 +46,6 @@ const Carousel = () => {
           ></button>
         ))}
       </div>
-      <div className="carousel__cart-container">
-        <img className="carousel__cart-img" src={cartIcon} alt="Cart" />
-        <div className="carousel__bubble">
-        <span>1</span>
-      </div>
-      </div>
-      
     </div>
   );
 };

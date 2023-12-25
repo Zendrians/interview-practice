@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "./AddToCartBtn.scss";
 import { DialogContext } from "../../context/dialogContext";
 
-const AddToCartBtn = () => {
+const AddToCartBtn = ({ addProductCount }) => {
   const { setIsOpen } = useContext(DialogContext);
 
   return (
@@ -10,6 +10,7 @@ const AddToCartBtn = () => {
       <button
         onClick={() => {
           setIsOpen(true);
+          addProductCount();
         }}
         className="add-to-cart-btn__btn"
       >
