@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { getProviders } from "../client/getProviders";
 import NotificationDialog from "../components/notificationDialog/NotificationDialog";
 import Cart from "../components/cart/Cart";
+import product from "../../../assets/products.json";
 
 const CardModuleContainer = () => {
   const [providers, setProviders] = useState([]);
@@ -37,7 +38,11 @@ const CardModuleContainer = () => {
           <Carousel />
           <Cart productCount={productCount} />
           <ColorButtonBar />
-          <Description />
+          <Description
+            name={product[0].title}
+            description={product[0].description}
+            price={product[0].price}
+          />
           <ProviderSelection providers={providers} />
           <AddToCartBtn addProductCount={addProductCount} />
         </MainCard>
