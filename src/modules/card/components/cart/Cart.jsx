@@ -6,7 +6,7 @@ const Cart = ({ productCount }) => {
     <div className="cart">
       <img className="cart__img" src={cartIcon} alt="Cart" />
       <div className="cart__bubble">
-        <span>{productCount}</span>
+        <span data-testid="a2c-counter">{productCount}</span>
       </div>
     </div>
   );
